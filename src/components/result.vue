@@ -7,7 +7,7 @@
       >
          <v-card>
           <v-card-text>
-            <div>You need to pay:</div>
+            <div>You will get:</div>
             <p class="display-1 text--primary">
               {{price}} {{currencies.buy}}
             </p>

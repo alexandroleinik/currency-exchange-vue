@@ -12,7 +12,7 @@
             md="3"
           >
               <v-select
-              v-model="buyCurrency"
+              v-model="sellCurrency"
               :rules="selectRules"
               :items="currencys"
               label="Want sell"
@@ -27,7 +27,7 @@
               <v-select
               :rules="selectRules"
             :items="currencys"
-            v-model="sellCurrency"
+            v-model="buyCurrency"
             label="Want buy"
             required
           ></v-select>
@@ -40,7 +40,7 @@
             <v-text-field
               v-model="count"
               :rules="countRules"
-              label="Currency count"
+              label="Sell count"
               required
             ></v-text-field>
           </v-col>
