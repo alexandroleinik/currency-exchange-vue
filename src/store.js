@@ -42,7 +42,7 @@ const store = new Vuex.Store({
       try {
 
         context.commit('setCurrencies', payload)
-        const res = await fetch(`https://api.exchangeratesapi.io/latest?access_key=${API_KEY}&base=${payload.sell}`);
+        const res = await fetch(`http://api.exchangeratesapi.io/latest?access_key=${API_KEY}&base=${payload.sell}`);
         const data = await res.json()
         const rates = await data.rates[payload.buy]
         context.commit('setRates', rates.toFixed(2))
